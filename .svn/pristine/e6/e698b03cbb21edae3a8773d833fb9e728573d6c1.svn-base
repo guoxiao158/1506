@@ -1,0 +1,11 @@
+分离头尾:   header.inc.php  被调用
+调用方法 
+在主页中在头部加入php标签 
+include './includes/header.inc.php' 
+require './includes/header.inc.php';
+注意：在别的页面进行调用时必须使用标准风格 <?php ?>
+防止恶意调用
+现在主页面授权调用头部php
+define(“IN_TG”,true)
+再在头部页面用defined进行判断是否存在此常量
+
